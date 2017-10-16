@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+import Baselayout from "./components/Baselayout";
 
 class App extends Component {
   render() {
@@ -8,11 +10,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Web Midi Application</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h3>
+          This app is designed to allow control of a browser-based granular
+          synthesizer with a Keith McMillen K-Mix.
+        </h3>
+        <Baselayout />
       </div>
     );
   }
